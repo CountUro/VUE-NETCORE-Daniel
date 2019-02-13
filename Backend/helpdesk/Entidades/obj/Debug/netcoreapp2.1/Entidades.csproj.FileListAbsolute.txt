@@ -1,0 +1,35 @@
+D:\Programacion\Aspnetcore\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.deps.json
+D:\Programacion\Aspnetcore\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.dll
+D:\Programacion\Aspnetcore\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.pdb
+D:\Programacion\Aspnetcore\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.csproj.CoreCompileInputs.cache
+D:\Programacion\Aspnetcore\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.AssemblyInfoInputs.cache
+D:\Programacion\Aspnetcore\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.AssemblyInfo.cs
+D:\Programacion\Aspnetcore\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.dll
+D:\Programacion\Aspnetcore\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.pdb
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.deps.json
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.dll
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.pdb
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.csprojAssemblyReference.cache
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.csproj.CoreCompileInputs.cache
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.AssemblyInfoInputs.cache
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.AssemblyInfo.cs
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.dll
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.pdb
+C:\Programming Laptop\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.deps.json
+C:\Programming Laptop\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.dll
+C:\Programming Laptop\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.pdb
+C:\Programming Laptop\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.csprojAssemblyReference.cache
+C:\Programming Laptop\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.csproj.CoreCompileInputs.cache
+C:\Programming Laptop\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.AssemblyInfoInputs.cache
+C:\Programming Laptop\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.AssemblyInfo.cs
+C:\Programming Laptop\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.dll
+C:\Programming Laptop\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.pdb
+D:\Projects\NET Projects\NET\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.deps.json
+D:\Projects\NET Projects\NET\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.dll
+D:\Projects\NET Projects\NET\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.pdb
+D:\Projects\NET Projects\NET\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.csprojAssemblyReference.cache
+D:\Projects\NET Projects\NET\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.csproj.CoreCompileInputs.cache
+D:\Projects\NET Projects\NET\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.AssemblyInfoInputs.cache
+D:\Projects\NET Projects\NET\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.AssemblyInfo.cs
+D:\Projects\NET Projects\NET\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.dll
+D:\Projects\NET Projects\NET\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.pdb

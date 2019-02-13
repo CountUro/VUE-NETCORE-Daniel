@@ -1,0 +1,84 @@
+D:\Programacion\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.deps.json
+D:\Programacion\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.runtimeconfig.json
+D:\Programacion\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.runtimeconfig.dev.json
+D:\Programacion\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.dll
+D:\Programacion\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.pdb
+D:\Programacion\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Datos.dll
+D:\Programacion\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Entidades.dll
+D:\Programacion\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Negocios.dll
+D:\Programacion\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Datos.pdb
+D:\Programacion\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Entidades.pdb
+D:\Programacion\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Negocios.pdb
+D:\Programacion\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csprojAssemblyReference.cache
+D:\Programacion\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csproj.CoreCompileInputs.cache
+D:\Programacion\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorAssemblyInfo.cache
+D:\Programacion\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorAssemblyInfo.cs
+D:\Programacion\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.AssemblyInfoInputs.cache
+D:\Programacion\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.AssemblyInfo.cs
+D:\Programacion\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorTargetAssemblyInfo.cache
+D:\Programacion\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csproj.CopyComplete
+D:\Programacion\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.dll
+D:\Programacion\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.pdb
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.deps.json
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.runtimeconfig.json
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.runtimeconfig.dev.json
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.dll
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.pdb
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Datos.dll
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Entidades.dll
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Negocios.dll
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Datos.pdb
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Entidades.pdb
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\bin\Debug\netcoreapp2.1\Negocios.pdb
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csprojAssemblyReference.cache
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csproj.CoreCompileInputs.cache
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorAssemblyInfo.cache
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorAssemblyInfo.cs
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.AssemblyInfoInputs.cache
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.AssemblyInfo.cs
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorTargetAssemblyInfo.cache
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csproj.CopyComplete
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.dll
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.pdb
+C:\Programming Laptop\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.deps.json
+C:\Programming Laptop\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.runtimeconfig.json
+C:\Programming Laptop\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.runtimeconfig.dev.json
+C:\Programming Laptop\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.dll
+C:\Programming Laptop\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.pdb
+C:\Programming Laptop\helpdesk\Web\bin\Debug\netcoreapp2.1\Datos.dll
+C:\Programming Laptop\helpdesk\Web\bin\Debug\netcoreapp2.1\Entidades.dll
+C:\Programming Laptop\helpdesk\Web\bin\Debug\netcoreapp2.1\Negocios.dll
+C:\Programming Laptop\helpdesk\Web\bin\Debug\netcoreapp2.1\Datos.pdb
+C:\Programming Laptop\helpdesk\Web\bin\Debug\netcoreapp2.1\Entidades.pdb
+C:\Programming Laptop\helpdesk\Web\bin\Debug\netcoreapp2.1\Negocios.pdb
+C:\Programming Laptop\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csprojAssemblyReference.cache
+C:\Programming Laptop\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csproj.CoreCompileInputs.cache
+C:\Programming Laptop\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorAssemblyInfo.cache
+C:\Programming Laptop\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorAssemblyInfo.cs
+C:\Programming Laptop\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.AssemblyInfoInputs.cache
+C:\Programming Laptop\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.AssemblyInfo.cs
+C:\Programming Laptop\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorTargetAssemblyInfo.cache
+C:\Programming Laptop\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csproj.CopyComplete
+C:\Programming Laptop\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.dll
+C:\Programming Laptop\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.pdb
+D:\Projects\NET Projects\NET\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.deps.json
+D:\Projects\NET Projects\NET\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.runtimeconfig.json
+D:\Projects\NET Projects\NET\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.runtimeconfig.dev.json
+D:\Projects\NET Projects\NET\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.dll
+D:\Projects\NET Projects\NET\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.pdb
+D:\Projects\NET Projects\NET\helpdesk\Web\bin\Debug\netcoreapp2.1\Datos.dll
+D:\Projects\NET Projects\NET\helpdesk\Web\bin\Debug\netcoreapp2.1\Entidades.dll
+D:\Projects\NET Projects\NET\helpdesk\Web\bin\Debug\netcoreapp2.1\Negocios.dll
+D:\Projects\NET Projects\NET\helpdesk\Web\bin\Debug\netcoreapp2.1\Datos.pdb
+D:\Projects\NET Projects\NET\helpdesk\Web\bin\Debug\netcoreapp2.1\Entidades.pdb
+D:\Projects\NET Projects\NET\helpdesk\Web\bin\Debug\netcoreapp2.1\Negocios.pdb
+D:\Projects\NET Projects\NET\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csprojAssemblyReference.cache
+D:\Projects\NET Projects\NET\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csproj.CoreCompileInputs.cache
+D:\Projects\NET Projects\NET\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorAssemblyInfo.cache
+D:\Projects\NET Projects\NET\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorAssemblyInfo.cs
+D:\Projects\NET Projects\NET\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.AssemblyInfoInputs.cache
+D:\Projects\NET Projects\NET\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.AssemblyInfo.cs
+D:\Projects\NET Projects\NET\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorTargetAssemblyInfo.cache
+D:\Projects\NET Projects\NET\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csproj.CopyComplete
+D:\Projects\NET Projects\NET\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.dll
+D:\Projects\NET Projects\NET\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.pdb

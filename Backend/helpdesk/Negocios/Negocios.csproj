@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Manageres\**" />
+    <EmbeddedResource Remove="Manageres\**" />
+    <None Remove="Manageres\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensiones\" />
+    <Folder Include="Funciones\" />
+    <Folder Include="ManejoError\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj" />
+    <ProjectReference Include="..\Entidades\Entidades.csproj" />
+  </ItemGroup>
+
+</Project>

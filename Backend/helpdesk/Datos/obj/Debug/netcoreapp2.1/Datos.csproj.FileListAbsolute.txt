@@ -1,0 +1,56 @@
+D:\Programacion\Aspnetcore\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.deps.json
+D:\Programacion\Aspnetcore\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.runtimeconfig.json
+D:\Programacion\Aspnetcore\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.runtimeconfig.dev.json
+D:\Programacion\Aspnetcore\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.dll
+D:\Programacion\Aspnetcore\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.pdb
+D:\Programacion\Aspnetcore\helpdesk\Datos\bin\Debug\netcoreapp2.1\Entidades.dll
+D:\Programacion\Aspnetcore\helpdesk\Datos\bin\Debug\netcoreapp2.1\Entidades.pdb
+D:\Programacion\Aspnetcore\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csprojAssemblyReference.cache
+D:\Programacion\Aspnetcore\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csproj.CoreCompileInputs.cache
+D:\Programacion\Aspnetcore\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.AssemblyInfoInputs.cache
+D:\Programacion\Aspnetcore\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.AssemblyInfo.cs
+D:\Programacion\Aspnetcore\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csproj.CopyComplete
+D:\Programacion\Aspnetcore\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.dll
+D:\Programacion\Aspnetcore\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.pdb
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.deps.json
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.runtimeconfig.json
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.runtimeconfig.dev.json
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.dll
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.pdb
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Datos\bin\Debug\netcoreapp2.1\Entidades.dll
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Datos\bin\Debug\netcoreapp2.1\Entidades.pdb
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csprojAssemblyReference.cache
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csproj.CoreCompileInputs.cache
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.AssemblyInfoInputs.cache
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.AssemblyInfo.cs
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csproj.CopyComplete
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.dll
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.pdb
+C:\Programming Laptop\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.deps.json
+C:\Programming Laptop\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.runtimeconfig.json
+C:\Programming Laptop\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.runtimeconfig.dev.json
+C:\Programming Laptop\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.dll
+C:\Programming Laptop\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.pdb
+C:\Programming Laptop\helpdesk\Datos\bin\Debug\netcoreapp2.1\Entidades.dll
+C:\Programming Laptop\helpdesk\Datos\bin\Debug\netcoreapp2.1\Entidades.pdb
+C:\Programming Laptop\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csprojAssemblyReference.cache
+C:\Programming Laptop\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csproj.CoreCompileInputs.cache
+C:\Programming Laptop\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.AssemblyInfoInputs.cache
+C:\Programming Laptop\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.AssemblyInfo.cs
+C:\Programming Laptop\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csproj.CopyComplete
+C:\Programming Laptop\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.dll
+C:\Programming Laptop\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.pdb
+D:\Projects\NET Projects\NET\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.deps.json
+D:\Projects\NET Projects\NET\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.runtimeconfig.json
+D:\Projects\NET Projects\NET\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.runtimeconfig.dev.json
+D:\Projects\NET Projects\NET\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.dll
+D:\Projects\NET Projects\NET\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.pdb
+D:\Projects\NET Projects\NET\helpdesk\Datos\bin\Debug\netcoreapp2.1\Entidades.dll
+D:\Projects\NET Projects\NET\helpdesk\Datos\bin\Debug\netcoreapp2.1\Entidades.pdb
+D:\Projects\NET Projects\NET\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csprojAssemblyReference.cache
+D:\Projects\NET Projects\NET\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csproj.CoreCompileInputs.cache
+D:\Projects\NET Projects\NET\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.AssemblyInfoInputs.cache
+D:\Projects\NET Projects\NET\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.AssemblyInfo.cs
+D:\Projects\NET Projects\NET\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csproj.CopyComplete
+D:\Projects\NET Projects\NET\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.dll
+D:\Projects\NET Projects\NET\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.pdb

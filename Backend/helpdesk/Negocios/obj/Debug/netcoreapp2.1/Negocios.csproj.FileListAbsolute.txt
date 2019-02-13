@@ -1,0 +1,56 @@
+D:\Programacion\Aspnetcore\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.deps.json
+D:\Programacion\Aspnetcore\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.dll
+D:\Programacion\Aspnetcore\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.pdb
+D:\Programacion\Aspnetcore\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Datos.dll
+D:\Programacion\Aspnetcore\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Entidades.dll
+D:\Programacion\Aspnetcore\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Datos.pdb
+D:\Programacion\Aspnetcore\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Entidades.pdb
+D:\Programacion\Aspnetcore\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csprojAssemblyReference.cache
+D:\Programacion\Aspnetcore\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csproj.CoreCompileInputs.cache
+D:\Programacion\Aspnetcore\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.AssemblyInfoInputs.cache
+D:\Programacion\Aspnetcore\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.AssemblyInfo.cs
+D:\Programacion\Aspnetcore\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csproj.CopyComplete
+D:\Programacion\Aspnetcore\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.dll
+D:\Programacion\Aspnetcore\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.pdb
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.deps.json
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.dll
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.pdb
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Datos.dll
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Entidades.dll
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Datos.pdb
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Entidades.pdb
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csprojAssemblyReference.cache
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csproj.CoreCompileInputs.cache
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.AssemblyInfoInputs.cache
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.AssemblyInfo.cs
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csproj.CopyComplete
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.dll
+D:\Projects\NET Projects\Aspnetcore\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.pdb
+C:\Programming Laptop\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.deps.json
+C:\Programming Laptop\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.dll
+C:\Programming Laptop\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.pdb
+C:\Programming Laptop\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Datos.dll
+C:\Programming Laptop\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Entidades.dll
+C:\Programming Laptop\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Datos.pdb
+C:\Programming Laptop\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Entidades.pdb
+C:\Programming Laptop\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csprojAssemblyReference.cache
+C:\Programming Laptop\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csproj.CoreCompileInputs.cache
+C:\Programming Laptop\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.AssemblyInfoInputs.cache
+C:\Programming Laptop\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.AssemblyInfo.cs
+C:\Programming Laptop\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csproj.CopyComplete
+C:\Programming Laptop\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.dll
+C:\Programming Laptop\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.pdb
+D:\Projects\NET Projects\NET\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.deps.json
+D:\Projects\NET Projects\NET\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.dll
+D:\Projects\NET Projects\NET\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.pdb
+D:\Projects\NET Projects\NET\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Datos.dll
+D:\Projects\NET Projects\NET\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Entidades.dll
+D:\Projects\NET Projects\NET\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Datos.pdb
+D:\Projects\NET Projects\NET\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Entidades.pdb
+D:\Projects\NET Projects\NET\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csprojAssemblyReference.cache
+D:\Projects\NET Projects\NET\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csproj.CoreCompileInputs.cache
+D:\Projects\NET Projects\NET\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.AssemblyInfoInputs.cache
+D:\Projects\NET Projects\NET\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.AssemblyInfo.cs
+D:\Projects\NET Projects\NET\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csproj.CopyComplete
+D:\Projects\NET Projects\NET\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.dll
+D:\Projects\NET Projects\NET\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.pdb
