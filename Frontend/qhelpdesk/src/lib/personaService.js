@@ -7,6 +7,9 @@ class PersonaService {
     this.user = store.state.usuario
     this.token = this.user.token_all
     this.headerAuth = store.state.headerToken
+    this.headerBasic = {
+      headers: { Authorization: self.token }
+    }
   }
 
   get (id) {
@@ -21,9 +24,7 @@ class PersonaService {
     // { Authorization: self.token }
     let self = this
     let url = self.url + '/GetAllVM'
-    return axios.get(url, {
-      headers: this.headerAuth
-    })
+    return axios.get(self.url, self.headerBasic)
   }
 
   add (model) {

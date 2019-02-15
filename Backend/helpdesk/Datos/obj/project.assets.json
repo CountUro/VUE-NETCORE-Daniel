@@ -14018,11 +14018,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\NET Projects\\NET\\helpdesk\\Datos\\Datos.csproj",
+      "projectUniqueName": "F:\\Programando\\Carpeta de Github\\VUE-Daniel\\Backend\\helpdesk\\Datos\\Datos.csproj",
       "projectName": "Datos",
-      "projectPath": "D:\\Projects\\NET Projects\\NET\\helpdesk\\Datos\\Datos.csproj",
+      "projectPath": "F:\\Programando\\Carpeta de Github\\VUE-Daniel\\Backend\\helpdesk\\Datos\\Datos.csproj",
       "packagesPath": "C:\\Users\\Count\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\NET Projects\\NET\\helpdesk\\Datos\\obj\\",
+      "outputPath": "F:\\Programando\\Carpeta de Github\\VUE-Daniel\\Backend\\helpdesk\\Datos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14041,8 +14041,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Projects\\NET Projects\\NET\\helpdesk\\Entidades\\Entidades.csproj": {
-              "projectPath": "D:\\Projects\\NET Projects\\NET\\helpdesk\\Entidades\\Entidades.csproj"
+            "F:\\Programando\\Carpeta de Github\\VUE-Daniel\\Backend\\helpdesk\\Entidades\\Entidades.csproj": {
+              "projectPath": "F:\\Programando\\Carpeta de Github\\VUE-Daniel\\Backend\\helpdesk\\Entidades\\Entidades.csproj"
             }
           }
         }

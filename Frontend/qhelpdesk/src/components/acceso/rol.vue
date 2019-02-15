@@ -38,7 +38,7 @@
               <q-field :count="15" :error="$v.vVentana.nombre.$error" :error-label="errorNombre">
                 <q-input
                   required
-                  ref="nombre"
+                  ref="nombre_columna"
                   float-label="Nombre (*)"
                   v-model.trim="vVentana.nombre"
                   @blur="$v.vVentana.nombre.$touch"
@@ -61,6 +61,9 @@
         </q-toolbar>
       </q-modal-layout>
     </q-modal>
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------->
+
     <q-layout-header>
       <q-table
         title="Lista de roles"

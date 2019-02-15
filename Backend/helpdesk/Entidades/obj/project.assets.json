@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\NET Projects\\NET\\helpdesk\\Entidades\\Entidades.csproj",
+      "projectUniqueName": "F:\\Programando\\Carpeta de Github\\VUE-Daniel\\Backend\\helpdesk\\Entidades\\Entidades.csproj",
       "projectName": "Entidades",
-      "projectPath": "D:\\Projects\\NET Projects\\NET\\helpdesk\\Entidades\\Entidades.csproj",
+      "projectPath": "F:\\Programando\\Carpeta de Github\\VUE-Daniel\\Backend\\helpdesk\\Entidades\\Entidades.csproj",
       "packagesPath": "C:\\Users\\Count\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\NET Projects\\NET\\helpdesk\\Entidades\\obj\\",
+      "outputPath": "F:\\Programando\\Carpeta de Github\\VUE-Daniel\\Backend\\helpdesk\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

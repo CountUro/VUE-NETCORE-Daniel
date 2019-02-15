@@ -110,7 +110,7 @@ namespace Web.Controllers
         // ---------------------------------------------------------
         // ---------------------------------------------------------
 
-        // GET: api/Personas
+        // GET: api/Personas/GetAllVM
         [HttpGet("[action]")]
         public async Task<IEnumerable<PersonaVM>> GetAllVM()
         {

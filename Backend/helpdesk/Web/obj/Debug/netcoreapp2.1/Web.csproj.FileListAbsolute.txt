@@ -82,3 +82,24 @@ D:\Projects\NET Projects\NET\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorTarge
 D:\Projects\NET Projects\NET\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csproj.CopyComplete
 D:\Projects\NET Projects\NET\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.dll
 D:\Projects\NET Projects\NET\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.pdb
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.deps.json
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.runtimeconfig.json
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.runtimeconfig.dev.json
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.dll
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\bin\Debug\netcoreapp2.1\Web.pdb
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\bin\Debug\netcoreapp2.1\Datos.dll
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\bin\Debug\netcoreapp2.1\Entidades.dll
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\bin\Debug\netcoreapp2.1\Negocios.dll
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\bin\Debug\netcoreapp2.1\Datos.pdb
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\bin\Debug\netcoreapp2.1\Entidades.pdb
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\bin\Debug\netcoreapp2.1\Negocios.pdb
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csprojAssemblyReference.cache
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csproj.CoreCompileInputs.cache
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorAssemblyInfo.cache
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorAssemblyInfo.cs
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.AssemblyInfoInputs.cache
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.AssemblyInfo.cs
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.RazorTargetAssemblyInfo.cache
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.csproj.CopyComplete
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.dll
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Web\obj\Debug\netcoreapp2.1\Web.pdb

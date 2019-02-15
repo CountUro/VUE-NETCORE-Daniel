@@ -1,46 +1,238 @@
 <template>
   <q-layout>
-    <!-- ----------------------------------------------------- -->
+
+    <!-- -----------------------            VENTANA AGREGAR & EDITAR                ------------------------------ -->
+
+    <!-- Propiedates -->
+    <q-modal
+      v-model="modalAgregaEdita"
+      no-backdrop-dismiss
+      no-esc-dismiss
+      :content-css="{minWidth: '45vw', minHeight: '40vh' }"
+    >
+
+      <q-modal-layout>
+
+        <!-- Titulo -->
+        <q-toolbar slot="header">
+          <q-toolbar-title>
+            {{TituloModal}}
+          </q-toolbar-title>
+        </q-toolbar>
+
+        <div class="layout-padding">
+          <div class="row gutter-x-sm gutter-y-lg">
+
+            <!-- ID -->
+            <div class="col-xs-12">
+              <q-field>
+                <q-input
+                  ref="persona_id"
+                  float-label="ID"
+                  v-model="formPersona.persona_id"
+                  readonly
+                  disabled
+                />
+              </q-field>
+            </div>
+
+            <!-- Cedula -->
+            <div class="col-xs-4">
+              <q-field :count="15" :error="$v.formPersona.cedula.$error" :error-label="ErrorCedula">
+                <q-input
+                  required
+                  ref="cedula"
+                  float-label="Cedula / NIE"
+                  v-model.trim="formPersona.cedula"
+                />
+              </q-field>
+            </div>
+
+            <!-- Correo -->
+            <div class="col-xs-4">
+              <q-field :count="15" :error="$v.formPersona.correo.$error" :error-label="ErrorCorreo">
+                <q-input
+                  required
+                  ref="email"
+                  float-label="E-Mail"
+                  v-model.trim="formPersona.email"
+                />
+              </q-field>
+            </div>
+
+            <!-- Titulo -->
+            <div class="col-xs-4">
+              <q-field :count="15" :error="$v.formPersona.cargo.$error" :error-label="ErrorCargo">
+                <q-input
+                  required
+                  ref="cargo"
+                  float-label="Titulo"
+                  v-model.trim="formPersona.cargo"
+                />
+              </q-field>
+            </div>
+
+            <!-- Nombre -->
+            <div class="col-xs-3">
+              <q-field :count="15" :error="$v.formPersona.nombre1.$error" :error-label="ErrorNombre1">
+                <q-input
+                  required
+                  ref="nombre1"
+                  float-label="Primer Nombre (*)"
+                  v-model.trim="formPersona.nombre1"
+                  @blur="$v.formPersona.nombre1.$touch"
+                />
+              </q-field>
+            </div>
+
+            <!-- Segundo Nombre -->
+            <div class="col-xs-3">
+              <q-field :count="15" :error="$v.formPersona.nombre2.$error" :error-label="ErrorNombre2">
+                <q-input
+                  required
+                  ref="nombre2"
+                  float-label="Segundo Nombre"
+                  v-model.trim="formPersona.nombre2"
+                />
+              </q-field>
+            </div>
+
+            <!-- Primer Apellido -->
+            <div class="col-xs-3">
+              <q-field :count="15" :error="$v.formPersona.apellido1.$error" :error-label="ErrorApellido1">
+                <q-input
+                  required
+                  ref="apellido1"
+                  float-label="Primer Apellido (*)"
+                  v-model.trim="formPersona.apellido1"
+                />
+              </q-field>
+            </div>
+
+            <!-- Segundo Apellido -->
+            <div class="col-xs-3">
+              <q-field :count="15" :error="$v.formPersona.apellido2.$error" :error-label="ErrorApellido2">
+                <q-input
+                  required
+                  ref="apellido2"
+                  float-label="Segundo Apellido"
+                  v-model.trim="formPersona.apellido2"
+                />
+              </q-field>
+            </div>
+
+            <!-- Telefono Movil -->
+            <div class="col-xs-2">
+              <q-field :count="15" :error="$v.formPersona.tlf_movil.$error" :error-label="ErrorTlf_movil">
+                <q-input
+                  required
+                  ref="tlf_movil"
+                  float-label="N° Movil"
+                  v-model.trim="formPersona.tlf_movil"
+                />
+              </q-field>
+            </div>
+
+            <!-- Telefono Fijo -->
+            <div class="col-xs-2">
+              <q-field :count="15" :error="$v.formPersona.tlf_local.$error" :error-label="ErrorTlf_local">
+                <q-input
+                  required
+                  ref="tlf_local"
+                  float-label="N° Telefono Fijo"
+                  v-model.trim="formPersona.tlf_local"
+                />
+              </q-field>
+            </div>
+
+
+          </div>
+
+        </div>
+        <q-toolbar slot="footer">
+          <q-toolbar-title>
+            <div class="row gutter-x-sm gutter-y-lg">
+              <div class="col-xs-12 col-md-3">
+                <q-btn :disabled="!FormaValida" color="primary" label="Aceptar" @click="AceptarApretado"/>
+              </div>
+              <div class="col-xs-12 col-md-3">
+                <q-btn color="primary" label="Cancelar" @click="VentanaCerrar"/>
+              </div>
+            </div>
+          </q-toolbar-title>
+        </q-toolbar>
+      </q-modal-layout>
+
+    </q-modal>
+
+    <!-- -----------------------      FINAL - VENTANA AGREGAR & EDITAR - FINAL               ------------------------------ -->
+
+
+    <!-- -----------------------                VENTANA BORRAR                        ------------------------------ -->
+
+    <q-dialog
+      v-model="dialogBorrar"
+      prevent-close
+      ok="Eliminar"
+      cancel="Cancelar"
+      @ok="DeleteRegistro"
+      @cancel="VentanaBorrarCerrar"
+    >
+      <span slot="title">{{formPersonaBorrar.nombre_comp}}</span>
+      <span slot="message">{{formPersonaBorrar.mensaje}}</span>
+    </q-dialog>
+
+    <!-- -----------------------       FINAL - VENTANA BORRAR - FINAL                        ------------------------------ -->
+
+
+    <!-- -----------------------                LA TABLA                        ------------------------------ -->
+
     <q-layout-header>
       <q-table
       title="Lista de Personas"
-      :data = vListaPersonas
-      :columns = vColumnas
-      row-key = "nombre1"
-      :filter = "vFiltro"
+      :data = ListaPersonas
+      :columns = Columnas
+      row-key = "cedula"
+      :filter = "filtro"
       >
 
+        <!------------ filtro ------------>
         <template slot="top-left" slot-scope="props">
-          <!-- <q-search hide-underline v-model="vFiltro"> -->
+          <q-search hide-underline v-model="filtro"/>
         </template>
 
-        <q-td slot="body-cell-opciones" slot-scope="props" :props="props">
-          <q-icon name="edit" @click.native="editarRegistro(props.row)"/>
+        <!------------ Editar ------------>
+        <q-td slot="body-cell-editar" slot-scope="props" :props="props">
+          <q-icon name="edit" @click.native="VentanaEditar(props.row)"/>
+        </q-td>-->
+
+        <!------------ Borrar ------------>
+        <q-td slot="body-cell-eliminar" slot-scope="props" :props="props">
+          <q-icon name="delete" @click.native="VentanaBorrar(props.row)"/>
         </q-td>-->
 
         <div slot="top" slot-scope="props" class="row flex-left full-width gutter-x-sm gutter-y-lg">
           <div class="col-xs-12 col-md-1">
 
-            <q-btn size="md" icon="refresh" color="primary" class="q-mr-md" @click="getPersonas">
+            <!------------ Refrescar ------------>
+            <q-btn size="md" icon="refresh" color="primary" class="q-mr-md" @click="GetRegistros">
               <q-tooltip>Refrescar datos de la tabla</q-tooltip>
             </q-btn>
 
           </div>
 
+          <!------------ Busqueda ------------>
           <div>
-
             <q-field :count="150" icon="search" icon-color="primary">
-              <q-input v-model="vFiltro"/>
+              <q-input v-model="filtro"/>
             </q-field>
-
           </div>
 
+          <!------------ Nuevo ------------>
           <div class="col-xs-12 col-md-1">
-
-            <q-btn size="md" icon="add" color="primary" @click="vNuevoRegistro">
+            <q-btn size="md" icon="add" color="primary" @click="VentanaAgregar">
               <q-tooltip>Agregar Persona</q-tooltip>
             </q-btn>
-
           </div>
 
         </div>
@@ -48,10 +240,14 @@
       </q-table>
     </q-layout-header>
 
-    <!-- ----------------------------------------------------- -->
+    <!-- -----------------------                FINAL - LA TABLA - FINAL                        ------------------------------ -->
 
   </q-layout>
 </template>
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------     SCRIPT            ---------------------------------------------------------- -->
+    <!-- --------------------------------------------------------------------------------------------------------------------------- -->
 
 <script>
 import { PersonaService } from '../../lib/personaService.js'
@@ -62,44 +258,43 @@ export default {
   data () {
     return {
 
-      vFiltro: '',
+      filtro: '',
 
       //----------------
+      modalAgregaEdita: false,
+      esNuevoRegistro: true,
 
-      vVentana: {
+      formPersona: {
         persona_id: '',
-        //cedula: '',
-        nombreP: ''//,
-        //nombre2: '',
+        cedula: '',
+        nombre1: '',
+        nombre2: '',
+        apellido1: '',
+        apellido2: '',
+        tlf_movil: '',
+        tlf_local: '',
+        email: '',
+        cargo: '',
+        sexo_6_id: ''
+      },
+
+
+      //---------------
+      dialogBorrar: false,
+
+      formPersonaBorrar: {
+        id: '',
+        nombre_comp: '',
         //apellido1: '',
-        //apellido2: '',
-        //tlf_movil: '',
-        //tlf_local: '',
+        //cedula: '',
         //email: '',
-        //cargo: '',
-        //sexo_6_id: '' // ??
+        //mensaje: ''
       },
 
       //---------------
+      ListaPersonas: [],
 
-      // vVentanaBorrar: {
-      //   id: '',
-      //   nombre1: '',
-      //   apellido1: '',
-      //   cedula: '',
-      //   email: ''
-      // },
-
-      //---------------
-
-      vNuevoRegistro: true,
-      vModoAE: false,
-      vModoBorrar: false,
-      vListaPersonas: [],
-
-      //--------------
-
-      vColumnas: [
+      Columnas: [
         {
           name: 'editar',
           label: 'Editar',
@@ -107,7 +302,16 @@ export default {
         },
 
         {
-          name: 'primerNombre',
+          name: 'cedula',
+          label: 'Cédula',
+          required: true,
+          align: 'left',
+          field: 'cedula',
+          sortable: true
+        },
+
+        {
+          name: 'nombre1',
           label: 'Primer Nombre',
           required: true,
           align: 'left',
@@ -116,40 +320,194 @@ export default {
         },
 
         {
+          name: 'nombre2',
+          label: 'Segundo Nombre',
+          align: 'left',
+          field: 'nombre2',
+          sortable: true
+        },
+
+        {
+          name: 'apellido1',
+          label: 'Primer Apellido',
+          required: true,
+          align: 'left',
+          field: 'apellido1',
+          sotrable: true
+        },
+
+        {
+          name: 'apellido2',
+          label: 'Segundo Apellido',
+          align: 'left',
+          field: 'apellido2',
+          sotrable: true
+        },
+
+        {
+          name: 'tlf_movil',
+          label: 'N° Movil',
+          align: 'left',
+          field: 'tlf_movil' // mascara?
+        },
+
+        {
+          name: 'tlf_local',
+          label: 'N° Telefono Fijo',
+          align: 'left',
+          field: 'tlf_local' // mascara?
+        },
+
+        {
+          name: 'email',
+          label: 'E-Mail',
+          align: 'left',
+          required: true,
+          field: 'email' // mascara?
+        },
+
+        {
+          name: 'cargo',
+          label: 'Título',
+          align: 'left',
+          field: 'cargo',
+          sotrable: true
+        },
+
+        {
+          name: 'sexo_6_id',
+          label: 'Sexo',
+          align: 'left',
+          field: 'sexo_6_id', // Como escribo el sexo?
+          sotrable: true
+        },
+
+        {
           name: 'eliminar',
           label: 'Eliminar',
           align: 'right'
         }
       ]
+        // public int persona_id { get; set; }
+        // public string cedula { get; set; }
+        // public string nombre1 { get; set; }
+        // public string nombre2 { get; set; }
+        // public string apellido1 { get; set; }
+        // public string apellido2 { get; set; }
+        // public string nombre_comp { get; set; }
+        // public string tlf_movil { get; set; }
+        // public string tlf_local { get; set; }
+        // public string email { get; set; }
+        // public string cargo { get; set; }
+        // public long sexo_6_id { get; set; }
+        // public string sexo6 { get; set; }
     }
   },
 
   validations: {
-    vVentana: {
-      nombreP: { required, maxLength: maxLength(100) }
+    formPersona: {
+      nombre1: { required, maxLength: maxLength(100) },
+      nombre2: { maxLength: maxLength(100) },
+      apellido1: { required, maxLength: maxLength(100) },
+      apellido2: { maxLength: maxLength(100) },
+      email: { required, maxLength: maxLength(50) },
+      tlf_movil: { maxLength: maxLength(20) },
+      tlf_local: { maxLength: maxLength(20) },
+      cedula: { required, maxLength: maxLength(20) },
+      cargo: { maxLength: maxLength(20) }
+      // sexo?
     }
   },
 
-  // ------------------------------------------------------------------------------
+  // --------------------------- COMPUTED ---------------------------------------------------
 
   computed: {
-    tituloVentana: function () {
-      return this.vNuevoRegistro === true ? 'Nueva Persona' : 'Editar Persona'
+    TituloModal: function () {
+      return this.esNuevoRegistro === true ? 'Nueva Persona' : 'Editar Persona'
     },
 
-    // ------------------------------
+    // -------
 
-    errorNombre (){
-      if (!this.$v.vVentana.nombreP.required) {
+    ErrorNombre1 () {
+      if (!this.$v.formPersona.nombre1.required) {
         return 'Introduzca el nombre de la Persona'
       }
+      if (!this.$v.formPersona.nombre1.maxLength) {
+        return 'No puede exceder de 100 caracteres'
+      }
+      return ''
     },
 
-    // ------------------------------
+    ErrorNombre2 () {
+      if (!this.$v.formPersona.nombre2.maxLength) {
+        return 'No puede exceder de 100 caracteres'
+      }
+      return ''
+    },
 
-    validForm: function () {
-      this.$v.vVentana.$touch()
-      if (this.$v.vVentana.$error){
+    ErrorApellido1 () {
+      if (!this.$v.formPersona.apellido1.required) {
+        return 'Introduzca el Apellido de la Persona'
+      }
+      if (!this.$v.formPersona.apellido1.maxLength) {
+        return 'No puede exceder de 100 caracteres'
+      }
+      return ''
+    },
+
+    ErrorApellido2 () {
+      if (!this.$v.formPersona.apellido2.maxLength) {
+        return 'No puede exceder de 100 caracteres'
+      }
+      return ''
+    },
+
+    ErrorCorreo () {
+      if (!this.$v.formPersona.email.required) {
+        return 'Introduzca el nombre de la Persona'
+      }
+      if (!this.$v.formPersona.email.maxLength) {
+        return 'No puede exceder de 100 caracteres'
+      }
+      return ''
+    },
+
+    ErrorTlf_movil () {
+      if (!this.$v.formPersona.tlf_movil.maxLength) {
+        return 'No puede exceder de 100 caracteres'
+      }
+      return ''
+    },
+
+    ErrorTlf_local () {
+      if (!this.$v.formPersona.tlf_local.maxLength) {
+        return 'No puede exceder de 100 caracteres'
+      }
+      return ''
+    },
+
+    ErrorCargo () {
+      if (!this.$v.formPersona.cargo.maxLength) {
+        return 'No puede exceder de 100 caracteres'
+      }
+      return ''
+    },
+
+    ErrorCedula () {
+      if (!this.$v.formPersona.cedula.required) {
+        return 'Introduzca el nombre de la Persona'
+      }
+      if (!this.$v.formPersona.cedula.maxLength) {
+        return 'No puede exceder de 100 caracteres'
+      }
+      return ''
+    },
+
+    // --------
+
+    FormaValida: function () {
+      this.$v.formPersona.$touch()
+      if (this.$v.formPersona.$error){
         return false
       } else {
         return true
@@ -157,98 +515,167 @@ export default {
     }
   },
 
-  // ---------------------------------------------------------------
+  // ------------------------ WATCH ---------------------------------------
 
   watch: {
-   vModoAE (val) {
-     val || this.cerrarVentana()
+   modalAgregaEdita (val) {
+     val || this.VentanaCerrar()
    }
   },
 
-  // ------------------------------------------------------------
+  // --------------------- LYFE CYCLE -------------------------------------
 
   created () {
-   this.getPersonas()
+   this.GetRegistros()
   },
 
-  // ----------------------------------------------------------
+  // ---------------------- METODOS ------------------------------------
 
   methods: {
 
-    getPersonas () {
+  // GET ---
+
+    GetRegistros () {
       this.vListaPersonas = []
-      PersonaServicio.getAll()
-        .then(repsonse => {
-          this.vListaPersonas = response.data
+      PersonaService.getAll()
+        .then(Respuesta => {
+          this.ListaPersonas = Respuesta.data
         })
         .catch(error => {
-          alert('Error trayendo las Peronas')
+          alert('Error trayendo las Personas')
         })
     },
 
-    // -----------------------------------------
+   // PUT ---
 
-   guardarApretado() {
-     this.$v.vVentana.$touch()
-     if (this.$v.vVentana.$error) {
-       MyLibjt.msgSnackBar('Data Invalida', 'error')
-     } else {
-       this.guardarOEditar()
-     }
-   },
-
-  // -----------------------------------
-
-   guardarOEditar () {
-     if (this.vNuevoRegistro === true) {
-       this.addRegistro()
-     }else{
-       this.updateRegistro()
-     }
-   },
-
-   // ----------------------------------
-
-   ventanaEditar (item) {
-     this.vVentana.persona_id = item.persona_id
-     this.vVtenana.nombreP = item.primerNombre
-     this.vNuevoRegistro = false
-     this.vModoAE = true
-   },
-
-   // ----------------------------------
-
-   updateRegistro () {
+   UpdateRegistro () {
      let modelo = {
-       persona_id: this.vVentana.persona_id,
-       nombre: this.vVentana.nombreP
+       persona_id: this.formPersona.persona_id,
+       nombre: this.formPersona.nombre1
      }
-     PersonaServicio.update(modelo)
+     PersonaService.update(modelo)
         .then(Response => {
-          this.cerrarVentana()
-          this.getPersonas()
+          this.VentanaCerrar()
+          this.GetRegistros()
       })
         .catch(error => {
           alert('Error actualizando la Persona')
         })
    },
 
-   // ----------------------------------
+   // POST ---
 
-   cerrarVentana() {
-     this.limpiarVentana()
-     this.vModoAE = false
+   AddRegistro () {
+     let modelo = {
+       nombre: this.formPersona.nombre1
+     }
+     PersonaService.add(modelo)
+        .then(Response => {
+          this.VentanaCerrar()
+          this.GetRegistros()
+        })
+        .catch(error => {
+          alert('Error agregando la persona')
+        })
    },
 
-   limpiarVentana () {
-     this.vVentana.persona_id = ''
-     this.vVentana.nombre = ''
-     this.vNuevoRegistro = true
+   // DELETE ---
+
+   DeleteRegistro () {
+     PersonaService.remove(this.formPersonaBorrar.id)
+        .then(Response => {
+          this.VentanaBorrarCerrar()
+          this.GetRegistros()
+        })
+        .catch(error => {
+          alert('Error borrando el registro')
+        })
+   },
+
+   // -------------- Ventanas --------------------
+
+   VentanaAgregar () {
+     this.formPersona.persona_id = ''
+     this.formPersona.nombre1 = ''
+     this.esNuevoRegistro = true
+     this.modalAgregaEdita = true
+   },
+
+   // ---
+
+   VentanaEditar (item) {
+     this.formPersona.persona_id = item.persona_id
+     this.formPersona.nombre1 = item.nombre1
+     this.formPersona.nombre2 = item.nombre2
+     this.formPersona.apellido1 = item.apellido1
+     this.formPersona.apellido2 = item.apellido2
+     this.formPersona.tlf_movil = item.tlf_movil
+     this.formPersona.tlf_local = item.tlf_local
+     this.formPersona.email = item.email
+     this.formPersona.cargo = item.cargo
+     this.formPersona.cedula = item.cedula
+     this.esNuevoRegistro = false
+     this.modalAgregaEdita = true
+   },
+
+   // ---
+
+   VentanaBorrar (item) {
+     this.dialogBorrar = true
+     this.formPersonaBorrar.id = item.persona_id
+     this.formPersonaBorrar.nombre_comp = item.nombre_comp
+     //this.dialogBorrar.apellido1 = item.apellido1
+     //this.dialogBorrar.cedula = item.cedula
+     //this.dialogBorrar.email = item.email
+     this.formPersonaBorrar.mensaje = 'Desea eliminar esta Persona?'
+   },
+
+   VentanaCerrar() {
+     this.VentanaLimpiar()
+     this.modalAgregaEdita = false
+   },
+
+   // ---
+
+   VentanaLimpiar () {
+     this.formPersona.persona_id = ''
+     this.formPersona.nombre1 = ''
+     this.formPersona.nombre2 = ''
+     this.formPersona.apellido1 = ''
+     this.formPersona.apellido2 = ''
+     this.formPersona.tlf_movil = ''
+     this.formPersona.tlf_local = ''
+     this.formPersona.email = ''
+     this.formPersona.cargo = ''
+     this.formPersona.cedula = ''
+     this.esNuevoRegistro = true
+   },
+
+   VentanaBorrarCerrar () {
+     this.formPersonaBorrar.nombre_comp = ''
+     this.formPersonaBorrar.mensaje = ''
+     this.dialogBorrar = false
+   },
+
+   // --------------- Otros ------------------------
+
+   AceptarApretado() {
+     this.$v.formPersona.$touch()
+     if (this.$v.formPersona.$error) {
+       MyLibjt.msgSnackBar('Data Invalida', 'error')
+     } else {
+       this.GuardarOEditar()
+     }
+   },
+
+   GuardarOEditar () {
+     if (this.esNuevoRegistro === true) {
+       this.AddRegistro()
+     }else{
+       this.UpdateRegistro()
+     }
    }
-
-   // ---------------------------------------
-
   }
 }
-</script>
 
+</script>

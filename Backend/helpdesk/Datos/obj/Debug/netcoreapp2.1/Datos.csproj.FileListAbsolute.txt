@@ -54,3 +54,17 @@ D:\Projects\NET Projects\NET\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.Assemb
 D:\Projects\NET Projects\NET\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csproj.CopyComplete
 D:\Projects\NET Projects\NET\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.dll
 D:\Projects\NET Projects\NET\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.pdb
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.deps.json
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.runtimeconfig.json
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.runtimeconfig.dev.json
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.dll
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Datos\bin\Debug\netcoreapp2.1\Datos.pdb
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Datos\bin\Debug\netcoreapp2.1\Entidades.dll
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Datos\bin\Debug\netcoreapp2.1\Entidades.pdb
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csprojAssemblyReference.cache
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csproj.CoreCompileInputs.cache
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.AssemblyInfoInputs.cache
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.AssemblyInfo.cs
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.csproj.CopyComplete
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.dll
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Datos\obj\Debug\netcoreapp2.1\Datos.pdb

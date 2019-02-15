@@ -54,3 +54,17 @@ D:\Projects\NET Projects\NET\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.
 D:\Projects\NET Projects\NET\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csproj.CopyComplete
 D:\Projects\NET Projects\NET\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.dll
 D:\Projects\NET Projects\NET\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.pdb
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.deps.json
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.dll
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Negocios.pdb
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Datos.dll
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Entidades.dll
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Datos.pdb
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Negocios\bin\Debug\netcoreapp2.1\Entidades.pdb
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csprojAssemblyReference.cache
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csproj.CoreCompileInputs.cache
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.AssemblyInfoInputs.cache
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.AssemblyInfo.cs
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.csproj.CopyComplete
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.dll
+F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Negocios\obj\Debug\netcoreapp2.1\Negocios.pdb
