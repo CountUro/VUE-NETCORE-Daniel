@@ -22,9 +22,18 @@ class PersonaService {
 
   getAll () {
     // { Authorization: self.token }
+    //console.log('toy llamando getall tambn ps')
     let self = this
     let url = self.url + '/GetAllVM'
-    return axios.get(self.url, self.headerBasic)
+    console.log('se trae la data en getAll. ' + url)
+    let filtro = {
+      cedula: '',
+      nombre: '',
+      correo: '',
+      cargo: '',
+      sexo: ''
+    }
+    return axios.get(url, { params: filtro, headers: { Authorization: self.token }})
   }
 
   add (model) {

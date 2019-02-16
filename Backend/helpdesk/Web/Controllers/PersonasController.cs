@@ -55,7 +55,7 @@ namespace Web.Controllers
         // ---------------------------------------------------------
 
         // ACTUALIZAR
-        // PUT: api/Personas/5
+        // PUT: api/Personas
         [HttpPut]
         public async Task<IActionResult> PutPersona([FromBody] PersonaUpdateVM persona)
         {
@@ -114,8 +114,11 @@ namespace Web.Controllers
         [HttpGet("[action]")]
         public async Task<IEnumerable<PersonaVM>> GetAllVM()
         {
-            PersonaFiltro filtro = BuilFiltroPersona();
+            //throw new Exception();
 
+            //Console.WriteLine("Entro");
+            PersonaFiltro filtro = BuilFiltroPersona();
+            
             var personas = await _servicioPersona.GetAllVM(filtro);
             return personas;
         }

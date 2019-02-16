@@ -8,7 +8,7 @@
       v-model="modalAgregaEdita"
       no-backdrop-dismiss
       no-esc-dismiss
-      :content-css="{minWidth: '45vw', minHeight: '40vh' }"
+      :content-css="{maxWidth: '45vw', minHeight: '40vh '}"
     >
 
       <q-modal-layout>
@@ -21,10 +21,11 @@
         </q-toolbar>
 
         <div class="layout-padding">
+
           <div class="row gutter-x-sm gutter-y-lg">
 
             <!-- ID -->
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-md-3">
               <q-field>
                 <q-input
                   ref="persona_id"
@@ -36,9 +37,26 @@
               </q-field>
             </div>
 
+            <!-- Correo -->
+            <div class="col-xs-12 col-md-9">
+              <q-field :count="150" :error="$v.formPersona.email.$error" :error-label="ErrorCorreo">
+              <!-- <q-field :count="15" > -->
+                <q-input
+                  required
+                  ref="email"
+                  float-label="E-Mail"
+                  v-model.trim="formPersona.email"
+                />
+              </q-field>
+            </div>
+          </div>
+
+          <div class="row gutter-x-sm gutter-y-lg">
+
             <!-- Cedula -->
-            <div class="col-xs-4">
+            <div class="col-xs-12 col-md-4">
               <q-field :count="15" :error="$v.formPersona.cedula.$error" :error-label="ErrorCedula">
+              <!-- <q-field :count="15"> -->
                 <q-input
                   required
                   ref="cedula"
@@ -48,21 +66,11 @@
               </q-field>
             </div>
 
-            <!-- Correo -->
-            <div class="col-xs-4">
-              <q-field :count="15" :error="$v.formPersona.correo.$error" :error-label="ErrorCorreo">
-                <q-input
-                  required
-                  ref="email"
-                  float-label="E-Mail"
-                  v-model.trim="formPersona.email"
-                />
-              </q-field>
-            </div>
 
             <!-- Titulo -->
-            <div class="col-xs-4">
-              <q-field :count="15" :error="$v.formPersona.cargo.$error" :error-label="ErrorCargo">
+            <div class="col-xs-12 col-md-8">
+              <q-field :count="60" :error="$v.formPersona.cargo.$error" :error-label="ErrorCargo">
+              <!-- <q-field :count="15" > -->
                 <q-input
                   required
                   ref="cargo"
@@ -71,10 +79,13 @@
                 />
               </q-field>
             </div>
+          </div>
 
+          <div class="row gutter-x-sm gutter-y-lg">
             <!-- Nombre -->
             <div class="col-xs-3">
-              <q-field :count="15" :error="$v.formPersona.nombre1.$error" :error-label="ErrorNombre1">
+              <q-field :count="100" :error="$v.formPersona.nombre1.$error" :error-label="ErrorNombre1">
+              <!-- <q-field :count="15"> -->
                 <q-input
                   required
                   ref="nombre1"
@@ -87,7 +98,8 @@
 
             <!-- Segundo Nombre -->
             <div class="col-xs-3">
-              <q-field :count="15" :error="$v.formPersona.nombre2.$error" :error-label="ErrorNombre2">
+              <q-field :count="100" :error="$v.formPersona.nombre2.$error" :error-label="ErrorNombre2">
+              <!-- <q-field :count="15" > -->
                 <q-input
                   required
                   ref="nombre2"
@@ -99,7 +111,8 @@
 
             <!-- Primer Apellido -->
             <div class="col-xs-3">
-              <q-field :count="15" :error="$v.formPersona.apellido1.$error" :error-label="ErrorApellido1">
+              <q-field :count="100" :error="$v.formPersona.apellido1.$error" :error-label="ErrorApellido1">
+              <!-- <q-field :count="15" > -->
                 <q-input
                   required
                   ref="apellido1"
@@ -111,7 +124,8 @@
 
             <!-- Segundo Apellido -->
             <div class="col-xs-3">
-              <q-field :count="15" :error="$v.formPersona.apellido2.$error" :error-label="ErrorApellido2">
+              <q-field :count="100" :error="$v.formPersona.apellido2.$error" :error-label="ErrorApellido2">
+              <!-- <q-field :count="15" > -->
                 <q-input
                   required
                   ref="apellido2"
@@ -120,10 +134,12 @@
                 />
               </q-field>
             </div>
-
+            </div>
+            <div class="row gutter-x-sm gutter-y-lg">
             <!-- Telefono Movil -->
-            <div class="col-xs-2">
-              <q-field :count="15" :error="$v.formPersona.tlf_movil.$error" :error-label="ErrorTlf_movil">
+            <div class="col-xs-12 col-md-4">
+              <q-field :count="20" :error="$v.formPersona.tlf_movil.$error" :error-label="ErrorTlf_movil">
+              <!-- <q-field :count="15"> -->
                 <q-input
                   required
                   ref="tlf_movil"
@@ -134,8 +150,8 @@
             </div>
 
             <!-- Telefono Fijo -->
-            <div class="col-xs-2">
-              <q-field :count="15" :error="$v.formPersona.tlf_local.$error" :error-label="ErrorTlf_local">
+            <div class="col-xs-12 col-md-4">
+              <q-field :count="20" :error="$v.formPersona.tlf_local.$error" :error-label="ErrorTlf_local">
                 <q-input
                   required
                   ref="tlf_local"
@@ -143,8 +159,22 @@
                   v-model.trim="formPersona.tlf_local"
                 />
               </q-field>
-            </div>
 
+            <!-- Sexo
+            <div class="col-xs-12 col-md-4">
+              <q-field :count="20" :error="$v.formPersona.sexo_6_id.$error" :error-label="ErrorSexo">
+
+                <q-select
+                  v-model="formPersona.sexo_6_id"
+                  radio
+                  float-label="Sexo"
+                  :options="listaSexos"
+                  @blur="$v.formPersona.sexo_6_id.$touch"
+                />
+              </q-field>
+            </div> -->
+
+            </div>
 
           </div>
 
@@ -190,7 +220,7 @@
     <q-layout-header>
       <q-table
       title="Lista de Personas"
-      :data = ListaPersonas
+      :data = listaPersonas
       :columns = Columnas
       row-key = "cedula"
       :filter = "filtro"
@@ -292,7 +322,8 @@ export default {
       },
 
       //---------------
-      ListaPersonas: [],
+      listaPersonas: [],
+      listaSexos: [],
 
       Columnas: [
         {
@@ -375,10 +406,10 @@ export default {
         },
 
         {
-          name: 'sexo_6_id',
+          name: 'sexo6',
           label: 'Sexo',
           align: 'left',
-          field: 'sexo_6_id', // Como escribo el sexo?
+          field: 'sexo6', // Como escribo el sexo?
           sotrable: true
         },
 
@@ -503,6 +534,10 @@ export default {
       return ''
     },
 
+    ErrorSexo () {
+      return ''
+    },
+
     // --------
 
     FormaValida: function () {
@@ -536,14 +571,30 @@ export default {
   // GET ---
 
     GetRegistros () {
-      this.vListaPersonas = []
+      console.log('estoy llamando joeputaxxxxxx')
+      this.listaPersonas = []
       PersonaService.getAll()
         .then(Respuesta => {
-          this.ListaPersonas = Respuesta.data
+          this.listaPersonas = Respuesta.data
         })
         .catch(error => {
+          console.log('error', error.data)
           alert('Error trayendo las Personas')
         })
+        //console.log(self.listaPersonas)
+    },
+
+    GetSexos() {
+      let self = this
+      self.listaSexos = []
+      DominioDetService.select(this.pais_id, 6, false, 2)
+        .then(respuesta => {
+          self.sexos= respuesta.data
+        })
+        .catch(error => {
+          alert('Error trayendo Sexos')
+        })
+        console.log(self.sexos)
     },
 
    // PUT ---
@@ -551,8 +602,18 @@ export default {
    UpdateRegistro () {
      let modelo = {
        persona_id: this.formPersona.persona_id,
-       nombre: this.formPersona.nombre1
+       cedula: this.formPersona.cedula,
+       nombre1: this.formPersona.nombre1,
+       nombre2: this.formPersona.nombre2,
+       apellido1: this.formPersona.apellido1,
+       apellido2: this.formPersona.apellido2,
+       tlf_movil: this.formPersona.tlf_movil,
+       tlf_local: this.formPersona.tlf_local,
+       email: this.formPersona.email,
+       cargo: this.formPersona.cargo,
+       sexo_6_id: parseInt(this.formPersona.sexo_6_id)
      }
+     console.log('modelo', modelo)
      PersonaService.update(modelo)
         .then(Response => {
           this.VentanaCerrar()
@@ -567,7 +628,7 @@ export default {
 
    AddRegistro () {
      let modelo = {
-       nombre: this.formPersona.nombre1
+       nombre1: this.formPersona.nombre1
      }
      PersonaService.add(modelo)
         .then(Response => {
