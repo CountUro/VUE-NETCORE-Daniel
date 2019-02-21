@@ -25,7 +25,7 @@
           <div class="row gutter-x-sm gutter-y-lg">
 
             <!-- ID -->
-            <div class="col-xs-12 col-md-3">
+            <div class="col-xs-12 col-md-3" text-color="$letras">
               <q-field>
                 <q-input
                   ref="persona_id"
@@ -159,20 +159,21 @@
                   v-model.trim="formPersona.tlf_local"
                 />
               </q-field>
+            </div>
 
-            <!-- Sexo
+            <!-- Sexo -->
             <div class="col-xs-12 col-md-4">
               <q-field :count="20" :error="$v.formPersona.sexo_6_id.$error" :error-label="ErrorSexo">
-
+              <!--<q-field>-->
                 <q-select
                   v-model="formPersona.sexo_6_id"
                   radio
                   float-label="Sexo"
                   :options="listaSexos"
                   @blur="$v.formPersona.sexo_6_id.$touch"
-                />
+                /><!-- @blur="$v.formPersona.sexo_6_id.$touch" -->
               </q-field>
-            </div> -->
+            </div>
 
             </div>
 
@@ -280,9 +281,11 @@
     <!-- --------------------------------------------------------------------------------------------------------------------------- -->
 
 <script>
-import { PersonaService } from '../../lib/personaService.js'
+import { DominioDetService } from '../../lib/dominioDetService.js'
+import { PersonaService } from '../../lib/persona/personaService.js'
 import { required, maxLength } from 'vuelidate/lib/validators'
 import { MyLibjt } from '../../lib/libjt.js'
+
 
 export default {
   data () {
@@ -445,8 +448,8 @@ export default {
       tlf_movil: { maxLength: maxLength(20) },
       tlf_local: { maxLength: maxLength(20) },
       cedula: { required, maxLength: maxLength(20) },
-      cargo: { maxLength: maxLength(20) }
-      // sexo?
+      cargo: { maxLength: maxLength(20) },
+      sexo_6_id: { required }
     }
   },
 
@@ -562,6 +565,7 @@ export default {
 
   created () {
    this.GetRegistros()
+   this.GetSexos()
   },
 
   // ---------------------- METODOS ------------------------------------
@@ -571,7 +575,7 @@ export default {
   // GET ---
 
     GetRegistros () {
-      console.log('estoy llamando joeputaxxxxxx')
+      //console.log('estoy llamando joeputaxxxxxx')
       this.listaPersonas = []
       PersonaService.getAll()
         .then(Respuesta => {
@@ -589,12 +593,12 @@ export default {
       self.listaSexos = []
       DominioDetService.select(this.pais_id, 6, false, 2)
         .then(respuesta => {
-          self.sexos= respuesta.data
+          self.listaSexos= respuesta.data
         })
         .catch(error => {
           alert('Error trayendo Sexos')
         })
-        console.log(self.sexos)
+        console.log(self.listaSexos)
     },
 
    // PUT ---
@@ -618,7 +622,7 @@ export default {
         .then(Response => {
           this.VentanaCerrar()
           this.GetRegistros()
-      })
+        })
         .catch(error => {
           alert('Error actualizando la Persona')
         })
@@ -628,7 +632,16 @@ export default {
 
    AddRegistro () {
      let modelo = {
-       nombre1: this.formPersona.nombre1
+      nombre1: this.formPersona.nombre1,
+      nombre2: this.formPersona.nombre2,
+      apellido1: this.formPersona.apellido1,
+      apellido2: this.formPersona.apellido2,
+      tlf_movil: this.formPersona.tlf_movil,
+      tlf_local: this.formPersona.tlf_local,
+      email: this.formPersona.email,
+      cargo: this.formPersona.cargo,
+      cedula: this.formPersona.cedula,
+      sexo_6_id: parseInt(this.formPersona.sexo_6_id)
      }
      PersonaService.add(modelo)
         .then(Response => {
@@ -658,6 +671,15 @@ export default {
    VentanaAgregar () {
      this.formPersona.persona_id = ''
      this.formPersona.nombre1 = ''
+     this.formPersona.nombre2 = ''
+     this.formPersona.apellido1 = ''
+     this.formPersona.apellido2 =  ''
+     this.formPersona.tlf_movil =  ''
+     this.formPersona.tlf_local = ''
+     this.formPersona.email = ''
+     this.formPersona.cargo = ''
+     this.formPersona.cedula = ''
+     this.formPersona.sexo_6_id = ''
      this.esNuevoRegistro = true
      this.modalAgregaEdita = true
    },
@@ -675,6 +697,7 @@ export default {
      this.formPersona.email = item.email
      this.formPersona.cargo = item.cargo
      this.formPersona.cedula = item.cedula
+     this.formPersona.sexo_6_id = item.sexo_6_id.toString()
      this.esNuevoRegistro = false
      this.modalAgregaEdita = true
    },

@@ -44,7 +44,7 @@
 </template>
 <script>
 import { MyLibjt } from '../../lib/libjt.js'
-import { UsuarioService } from '../../lib/usuarioService.js'
+import { UsuarioService } from '../../lib/acceso/usuarioService.js'
 import { required, email } from 'vuelidate/lib/validators'
 export default {
   data () {

@@ -121,7 +121,7 @@ var router = new Router({
         //     consultor: true,
         //     cxc: true
         //   }
-        // },
+        // }
         // {
         //   path: '/sucursales',
         //   name: 'sucursales',
