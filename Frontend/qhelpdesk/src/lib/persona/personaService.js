@@ -14,7 +14,7 @@ class PersonaService {
 
   get (id) {
     let self = this
-    let url = self.url + `${id}` + '/'
+    let url = self.url + '/' + `${id}`
     return axios.get(url, {
       headers: { Authorization: self.token }
     })

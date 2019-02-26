@@ -2,34 +2,65 @@
 // to match your app's branding.
 
 // $primary   = #027be3
-$primary   = $blue-grey-10
-$secondary = #26A69A
+
+
 $tertiary  = #555
 
-$neutral   = #E0E1E2
+// FONDO OSCURO
+$primary = $cyan-9 // Botones
+$light = $grey-4 // Letras y lineas
+$dark = $blue-grey-10 // Fondo
+$faded = $teal-10 // Fondo Segundo
+//$info // Resaltado
+
+// FONDO BLANCO
+$secondary = $teal-5 // Botones
+$black = #000000 // Letras y lineas
+$white = #FFFFFF // Fondo
+$neutral = #E0E1E2// Fondo Segundo
+$info = $cyan-7// Resaltado
+
+// NEUTROS
 $positive  = #21BA45
 $negative  = #DB2828
-$info      = #31CCEC
 $warning   = #F2C037
 
-////////////////// Personal /////////////////////
-$fondo = $grey-10
-$letras = $grey-5
-$lineas= $grey-8
-$resaltado = $grey-8
 
-$body-background = $fondo
-$body-color = $letras
+////////////////// Personal /////////////////////
+$botones-oscuro = $primary
+$letras-oscuro = $light
+$fondo-oscuro = $dark
+$fondoSegundo-oscuro = $faded
+$resaltado-oscuro = $info
+
+$botones-claro = $secondary
+$letras-claro = $black
+$fondo-claro = $white
+$fondoSegundo-claro = $neutral
+$resaltado-claro = $info
+
+///////////////// General //////////////////////
+$body-background = $fondo-oscuro
+$body-color = $letras-oscuro
 
 ////////////////// TABLA /////////////////////
-$table-color = $letras // Color de las letras en las lineas dentro de las tablas
-$table-header-color = $letras // Color de los titulos de columnas dentro de las tablas
-$table-border-color	= $lineas // Color de las lineas en la tabla
+$table-color = $letras-oscuro // Color de las letras en las lineas dentro de las tablas
+$table-header-color = $letras-oscuro // Color de los titulos de columnas dentro de las tablas
+$table-border-color	= $letras-oscuro // Color de las lineas en la tabla
+$table-hover-background = $resaltado-oscuro
 
 ////////////////// MENU /////////////////////
-$layout-aside-background = $fondo // Color de fondo del menu
-$item-highlight-color = $grey-8
-$table-hover-background = $resaltado
+$layout-aside-background = $fondoSegundo-oscuro // Color de fondo del menu
+$item-highlight-color = $resaltado-oscuro
+$collapsible-active-color = $info
+
+//////////////// MODAL ///////////////////////
+$modal-background = $fondo-oscuro
+$modal-body-color = $letras-oscuro
+$field-label-color = $letras-oscuro
+//$form-dark = $letras-oscuro
+
+
 
 ////////////////// Letras /////////////////////
 $typography-font-family = 'Roboto'

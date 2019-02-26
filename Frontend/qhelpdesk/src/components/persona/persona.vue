@@ -8,13 +8,13 @@
       v-model="modalAgregaEdita"
       no-backdrop-dismiss
       no-esc-dismiss
-      :content-css="{maxWidth: '45vw', minHeight: '40vh '}"
+      :content-css="{ maxWidth: '45vw', minHeight: '40vh', minWidth: '30vw', maxHeight: '30vh'}"
     >
 
       <q-modal-layout>
 
         <!-- Titulo -->
-        <q-toolbar slot="header">
+        <q-toolbar slot="header" :color="colorFondoDos">
           <q-toolbar-title>
             {{TituloModal}}
           </q-toolbar-title>
@@ -25,14 +25,17 @@
           <div class="row gutter-x-sm gutter-y-lg">
 
             <!-- ID -->
-            <div class="col-xs-12 col-md-3" text-color="$letras">
+            <div class="col-xs-12 col-md-3" :text-color="colorLetras">
               <q-field>
+
                 <q-input
+                  :dark="oscuridad"
                   ref="persona_id"
                   float-label="ID"
                   v-model="formPersona.persona_id"
                   readonly
                   disabled
+                  :color="colorResaltado"
                 />
               </q-field>
             </div>
@@ -42,6 +45,7 @@
               <q-field :count="150" :error="$v.formPersona.email.$error" :error-label="ErrorCorreo">
               <!-- <q-field :count="15" > -->
                 <q-input
+                  :dark="oscuridad"
                   required
                   ref="email"
                   float-label="E-Mail"
@@ -58,6 +62,7 @@
               <q-field :count="15" :error="$v.formPersona.cedula.$error" :error-label="ErrorCedula">
               <!-- <q-field :count="15"> -->
                 <q-input
+                  :dark="oscuridad"
                   required
                   ref="cedula"
                   float-label="Cedula / NIE"
@@ -72,6 +77,7 @@
               <q-field :count="60" :error="$v.formPersona.cargo.$error" :error-label="ErrorCargo">
               <!-- <q-field :count="15" > -->
                 <q-input
+                  :dark="oscuridad"
                   required
                   ref="cargo"
                   float-label="Titulo"
@@ -87,6 +93,7 @@
               <q-field :count="100" :error="$v.formPersona.nombre1.$error" :error-label="ErrorNombre1">
               <!-- <q-field :count="15"> -->
                 <q-input
+                  :dark="oscuridad"
                   required
                   ref="nombre1"
                   float-label="Primer Nombre (*)"
@@ -101,6 +108,7 @@
               <q-field :count="100" :error="$v.formPersona.nombre2.$error" :error-label="ErrorNombre2">
               <!-- <q-field :count="15" > -->
                 <q-input
+                  :dark="oscuridad"
                   required
                   ref="nombre2"
                   float-label="Segundo Nombre"
@@ -114,6 +122,7 @@
               <q-field :count="100" :error="$v.formPersona.apellido1.$error" :error-label="ErrorApellido1">
               <!-- <q-field :count="15" > -->
                 <q-input
+                  :dark="oscuridad"
                   required
                   ref="apellido1"
                   float-label="Primer Apellido (*)"
@@ -127,6 +136,7 @@
               <q-field :count="100" :error="$v.formPersona.apellido2.$error" :error-label="ErrorApellido2">
               <!-- <q-field :count="15" > -->
                 <q-input
+                  :dark="oscuridad"
                   required
                   ref="apellido2"
                   float-label="Segundo Apellido"
@@ -141,6 +151,7 @@
               <q-field :count="20" :error="$v.formPersona.tlf_movil.$error" :error-label="ErrorTlf_movil">
               <!-- <q-field :count="15"> -->
                 <q-input
+                  :dark="oscuridad"
                   required
                   ref="tlf_movil"
                   float-label="N° Movil"
@@ -153,6 +164,7 @@
             <div class="col-xs-12 col-md-4">
               <q-field :count="20" :error="$v.formPersona.tlf_local.$error" :error-label="ErrorTlf_local">
                 <q-input
+                  :dark="oscuridad"
                   required
                   ref="tlf_local"
                   float-label="N° Telefono Fijo"
@@ -166,6 +178,7 @@
               <q-field :count="20" :error="$v.formPersona.sexo_6_id.$error" :error-label="ErrorSexo">
               <!--<q-field>-->
                 <q-select
+                  :dark="oscuridad"
                   v-model="formPersona.sexo_6_id"
                   radio
                   float-label="Sexo"
@@ -180,14 +193,14 @@
           </div>
 
         </div>
-        <q-toolbar slot="footer">
+        <q-toolbar slot="footer" :color="colorFondoDos">
           <q-toolbar-title>
             <div class="row gutter-x-sm gutter-y-lg">
               <div class="col-xs-12 col-md-3">
-                <q-btn :disabled="!FormaValida" color="primary" label="Aceptar" @click="AceptarApretado"/>
+                <q-btn :disabled="!FormaValida" :color="colorBotones" label="Aceptar" @click="AceptarApretado"/>
               </div>
               <div class="col-xs-12 col-md-3">
-                <q-btn color="primary" label="Cancelar" @click="VentanaCerrar"/>
+                <q-btn :color="colorBotones" label="Cancelar" @click="VentanaCerrar"/>
               </div>
             </div>
           </q-toolbar-title>
@@ -246,7 +259,7 @@
           <div class="col-xs-12 col-md-1">
 
             <!------------ Refrescar ------------>
-            <q-btn size="md" icon="refresh" color="primary" class="q-mr-md" @click="GetRegistros">
+            <q-btn size="md" icon="refresh" :color="colorBotones" class="q-mr-md" @click="GetRegistros">
               <q-tooltip>Refrescar datos de la tabla</q-tooltip>
             </q-btn>
 
@@ -254,14 +267,14 @@
 
           <!------------ Busqueda ------------>
           <div>
-            <q-field :count="150" icon="search" icon-color="primary">
-              <q-input v-model="filtro"/>
+            <q-field :count="150" icon="search" :icon-color="colorBotones">
+              <q-input :dark="oscuridad" v-model="filtro"/>
             </q-field>
           </div>
 
           <!------------ Nuevo ------------>
           <div class="col-xs-12 col-md-1">
-            <q-btn size="md" icon="add" color="primary" @click="VentanaAgregar">
+            <q-btn size="md" icon="add" :color="colorBotones" @click="VentanaAgregar">
               <q-tooltip>Agregar Persona</q-tooltip>
             </q-btn>
           </div>
@@ -282,7 +295,7 @@
 
 <script>
 import { DominioDetService } from '../../lib/dominioDetService.js'
-import { PersonaService } from '../../lib/persona/personaService.js'
+import { PersonaService } from '../../lib/persona/personaService.js' // '../../lib/persona/personaService.js'
 import { required, maxLength } from 'vuelidate/lib/validators'
 import { MyLibjt } from '../../lib/libjt.js'
 
@@ -290,6 +303,14 @@ import { MyLibjt } from '../../lib/libjt.js'
 export default {
   data () {
     return {
+      // Colores por defecto oscuros
+      colorBotones: 'primary',
+      colorLetras: 'light',
+      colorFondo: 'dark',
+      colorFondoDos: 'faded',
+      colorResaltado: 'info',
+
+      oscuridad: 'dark',
 
       filtro: '',
 
@@ -321,7 +342,7 @@ export default {
         //apellido1: '',
         //cedula: '',
         //email: '',
-        //mensaje: ''
+        mensaje: ''
       },
 
       //---------------
@@ -582,7 +603,7 @@ export default {
           this.listaPersonas = Respuesta.data
         })
         .catch(error => {
-          console.log('error', error.data)
+          //console.log('error', error.data)
           alert('Error trayendo las Personas')
         })
         //console.log(self.listaPersonas)
@@ -598,7 +619,7 @@ export default {
         .catch(error => {
           alert('Error trayendo Sexos')
         })
-        console.log(self.listaSexos)
+        //console.log(self.listaSexos)
     },
 
    // PUT ---
@@ -763,3 +784,4 @@ export default {
 }
 
 </script>
+

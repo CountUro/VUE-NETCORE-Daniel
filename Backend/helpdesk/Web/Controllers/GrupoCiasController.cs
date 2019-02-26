@@ -31,8 +31,9 @@ namespace Web.Controllers
 
         // GET: api/GrupoCias
         [HttpGet]
-        public IEnumerable<GrupoCia> GetGrupoCias()
+        public async Task<IEnumerable<GrupoCia>> GetGrupoCias()
         {
+            var lista = await _servicioGrupoCias.GetAll();
             return _context.GrupoCias;
         }
 

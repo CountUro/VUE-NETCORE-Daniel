@@ -157,7 +157,7 @@ export default {
       // this.$store.state.services.UsuarioService.init(user, urlBase)
       // this.$store.state.services.RolService.init(user, urlBase)
       // this.$store.state.services.SoporteService.init(user, urlBase)
-      // this.$store.state.services.GrupoCiaService.init(user, urlBase)
+      //this.$store.state.services.grupoCiasService.init(user, urlBase)
       // this.$store.state.services.CiaService.init(user, urlBase)
       // this.$store.state.services.SucursalService.init(user, urlBase)
       // this.$store.state.services.HdDocService.init(user, urlBase)

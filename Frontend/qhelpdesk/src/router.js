@@ -12,8 +12,8 @@ import Persona from './components/persona/persona.vue'
  import Rol from './components/acceso/rol.vue'
 // import Usuario from './components/acceso/user.vue'
 // import CambiarPwd from './components/acceso/cambiarpwd.vue'
-// import Cia from './components/cia/cia.vue'
-// import GrupoCia from './components/cia/grupocia.vue'
+import Cia from './components/administracion/cia.vue'
+import GrupoCias from './components/administracion/grupoCias.vue'
 // import Sucursal from './components/cia/sucursal.vue'
 // import Pais from './components/direccion/pais.vue'
 // import Estado from './components/direccion/estado.vue'
@@ -80,7 +80,7 @@ var router = new Router({
           meta :{
             administrador :true
           }
-        }
+        },
         // {
         //   path: '/usuarios',
         //   name: 'usuarios',
@@ -100,28 +100,28 @@ var router = new Router({
         //     cxc: true
         //   }
         // },
-        // {
-        //   path: '/cia',
-        //   name: 'cias',
-        //   component: Cia,
-        //   meta :{
-        //     administrador :true,
-        //     usuario: true,
-        //     consultor: true,
-        //     cxc: true
-        //   }
-        // },
-        // {
-        //   path: '/grupocias',
-        //   name: 'grupocias',
-        //   component: GrupoCia,
-        //   meta :{
-        //     administrador :true,
-        //     usuario: true,
-        //     consultor: true,
-        //     cxc: true
-        //   }
-        // }
+        {
+          path: '/cia',
+          name: 'cias',
+          component: Cia,
+          meta :{
+            administrador :true,
+            usuario: true,
+            consultor: true,
+            cxc: true
+          }
+        },
+        {
+          path: '/grupoCias',
+          name: 'grupoCias',
+          component: GrupoCias,
+          meta :{
+            administrador :true,
+            usuario: true,
+            consultor: true,
+            cxc: true
+          }
+        }
         // {
         //   path: '/sucursales',
         //   name: 'sucursales',

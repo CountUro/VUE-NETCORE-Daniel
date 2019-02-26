@@ -61,7 +61,7 @@ namespace Negocios.Servicios
             }
 
             var encontrar = await _context.GrupoCias.FindAsync(id);
-            if (encontrar != null)
+            if (encontrar == null)
             {
                 throw new Exception("No se ha eliminado el registro");
                 return false;
