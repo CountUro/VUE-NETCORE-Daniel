@@ -171,6 +171,7 @@ namespace Negocios.Servicios
                                 lic_alquiler = x.lic_alquiler,
                                 lic_vta = x.lic_vta,
                                 version_app = x.version_app,
+                                version_bd = x.version_bd,
                                 marca = x.marca,
                                 soporte_id = x.soporte_id,
                                 soporte = x.soporte.nombre,
@@ -197,9 +198,11 @@ namespace Negocios.Servicios
                             .Include(c => c.pais)
                             .Include(d => d.estado)
                             .Include(e => e.ciudad)
-                            .Include(f => f.marca)
+                            .Include(f => f.marca87)
                             .Include(g => g.soporte)
                             .FirstOrDefaultAsync(x => x.cia_id == id);
+
+            var patata = 2 + 2;
 
             var regreso = new CiaVM
             {
@@ -221,6 +224,7 @@ namespace Negocios.Servicios
                 lic_alquiler = modelo.lic_alquiler,
                 lic_vta = modelo.lic_vta,
                 version_app = modelo.version_app,
+                version_bd = modelo.version_bd,
                 marca = modelo.marca,
                 soporte_id = modelo.soporte_id,
                 soporte = modelo.soporte.nombre,
@@ -252,6 +256,7 @@ namespace Negocios.Servicios
             cia.tipo_166_id = model.tipo_166_id;
             cia.pais_id = model.pais_id;
             cia.estado_id = model.estado_id;
+            cia.ciudad_id = model.ciudad_id;
             cia.soporte_id = model.soporte_id;
             cia.marca_87_id = model.marca_87_id;
             cia.codigo_bd = model.codigo_bd;

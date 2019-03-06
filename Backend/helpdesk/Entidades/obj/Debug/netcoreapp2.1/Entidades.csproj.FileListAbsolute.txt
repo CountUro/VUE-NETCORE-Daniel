@@ -36,7 +36,6 @@ D:\Projects\NET Projects\NET\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidade
 F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.deps.json
 F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.dll
 F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Entidades\bin\Debug\netcoreapp2.1\Entidades.pdb
-F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.csprojAssemblyReference.cache
 F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.csproj.CoreCompileInputs.cache
 F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.AssemblyInfoInputs.cache
 F:\Programando\Carpeta de Github\VUE-Daniel\Backend\helpdesk\Entidades\obj\Debug\netcoreapp2.1\Entidades.AssemblyInfo.cs

@@ -8,8 +8,8 @@ import Home from './views/Home.vue'
 import About from './views/About.vue'
 
 import Persona from './components/persona/persona.vue'
-// import Caso from './components/caso/caso.vue'
- import Rol from './components/acceso/rol.vue'
+import Caso from './components/casos/caso.vue'
+import Rol from './components/acceso/rol.vue'
 // import Usuario from './components/acceso/user.vue'
 // import CambiarPwd from './components/acceso/cambiarpwd.vue'
 import Cia from './components/administracion/cia.vue'
@@ -62,17 +62,17 @@ var router = new Router({
             cxc: true
           }
         },
-        // {
-        //   path: '/casos',
-        //   name: 'casos',
-        //   component: Caso,
-        //   meta :{
-        //     administrador :true,
-        //     usuario: true,
-        //     consultor: true,
-        //     cxc: true
-        //   }
-        // },
+        {
+          path: '/caso',
+          name: 'caso',
+          component: Caso,
+          meta :{
+            administrador :true,
+            usuario: true,
+            consultor: true,
+            cxc: true
+          }
+        },
         {
           path: '/roles',
           name: 'roles',

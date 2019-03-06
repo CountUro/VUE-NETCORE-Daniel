@@ -652,6 +652,7 @@ export default {
    // POST ---
 
    AddRegistro () {
+     consolge.log('entrando a agregar')
      let modelo = {
       nombre1: this.formPersona.nombre1,
       nombre2: this.formPersona.nombre2,
@@ -765,6 +766,7 @@ export default {
    // --------------- Otros ------------------------
 
    AceptarApretado() {
+
      this.$v.formPersona.$touch()
      if (this.$v.formPersona.$error) {
        MyLibjt.msgSnackBar('Data Invalida', 'error')
@@ -774,6 +776,7 @@ export default {
    },
 
    GuardarOEditar () {
+
      if (this.esNuevoRegistro === true) {
        this.AddRegistro()
      }else{
